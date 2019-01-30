@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_weight="10"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="a"
+            android:inputType="numberDecimal" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10" />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="b"
+            android:inputType="numberDecimal" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10" />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="c"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+
+    </WebView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/startpg"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="statp"
+            android:text="new solution" />
+
+        <Button
+            android:id="@+id/solu"
+            android:onClick="solu"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="go to start page" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
